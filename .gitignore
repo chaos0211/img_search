@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+
+# Frontend dependencies and build output
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+backend/frontend_dist/
+
+# Runtime configuration and local IDE files
+.env
+.env.*
+.idea/
+.vscode/
+.DS_Store
+._*
+
+# Data, generated features, indexes, thumbnails and runtime output
+data/
+features/
+storage/
+outputs/
+logs/
+tmp/
+test-results/
+
+# External reference projects
+visual-search-engine/
+
+# Documents and writing materials
+docs/
+*.md
+*.doc
+*.docx
+*.pdf
+*.bak
+scripts/generate_thesis_draft.py
+
+# Model checkpoints
+checkpoints/

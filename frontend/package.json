@@ -1,0 +1,22 @@
+{
+  "name": "img-search-frontend",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173",
+    "dev:user": "VITE_CLIENT_ROLE=user VITE_CLIENT_PORT=5173 vite --host 0.0.0.0 --port 5173 --strictPort",
+    "dev:user:5174": "VITE_CLIENT_ROLE=user VITE_CLIENT_PORT=5174 vite --host 0.0.0.0 --port 5174 --strictPort",
+    "dev:user:5175": "VITE_CLIENT_ROLE=user VITE_CLIENT_PORT=5175 vite --host 0.0.0.0 --port 5175 --strictPort",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "streamlit-component-lib": "^2.0.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

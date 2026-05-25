@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https: http://127.0.0.1:* http://localhost:*; font-src 'self' data:; connect-src 'self' http://127.0.0.1:* http://localhost:* ws://127.0.0.1:* ws://localhost:*"
+    />
+    <title>相似图像检索</title>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        background: #f3f6f8;
+        font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+      #app {
+        height: 100%;
+      }
+      .boot-shell {
+        min-height: 100%;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: linear-gradient(180deg, #f7fafc, #eef3f7);
+      }
+      .boot-card {
+        width: min(420px, 100%);
+        padding: 28px;
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 18px 44px rgba(16, 39, 55, 0.12);
+        color: #17384a;
+      }
+      .boot-badge {
+        display: inline-block;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: #d9e4ea;
+        color: #35505f;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+      }
+      .boot-card h1 {
+        margin: 18px 0 10px;
+        font-size: 30px;
+        line-height: 1.2;
+      }
+      .boot-card p {
+        margin: 0;
+        color: #5e7888;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="boot-shell">
+        <div class="boot-card">
+          <span class="boot-badge">IMG SEARCH</span>
+          <h1>页面加载中</h1>
+          <p>正在连接后端并准备界面内容。</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+  </html>
