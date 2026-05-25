@@ -40,6 +40,7 @@ docs/
 *.doc
 *.docx
 *.pdf
+*.zip
 *.bak
 scripts/generate_thesis_draft.py
 
